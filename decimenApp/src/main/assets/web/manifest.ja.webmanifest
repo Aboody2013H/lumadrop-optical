@@ -1,6 +1,6 @@
 {
-  "name": "Decimen Optical Transfer",
-  "short_name": "Decimen",
+  "name": "LumaDrop Optical",
+  "short_name": "LumaDrop",
   "description": "画面とカメラだけで、2台のデバイス間でファイルやテキストを送れます。ファウンテン符号化されたアニメーションQRコードを使い、間にネットワーク経路はありません。",
   "theme_color": "#070a11",
   "background_color": "#070a11",

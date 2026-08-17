@@ -20,7 +20,7 @@ export const messages: Messages = {
   },
 
   home: {
-    title: "Decimen Optical Transfer — रोशनी से फ़ाइलें ट्रांसफ़र करें",
+    title: "LumaDrop Optical — रोशनी से फ़ाइलें ट्रांसफ़र करें",
     metaDescription:
       "सिर्फ़ एक स्क्रीन और एक कैमरे से दो डिवाइस के बीच फ़ाइल या टेक्स्ट भेजें। फ़ाउंटेन-कोडेड एनिमेटेड QR कोड — बीच में कोई नेटवर्क नहीं।",
     ogDescription:
@@ -39,10 +39,10 @@ export const messages: Messages = {
     cardReceiveTitle: "कैमरा दिखाएँ और प्राप्त करें",
     cardReceiveBody: "फ़ाइल प्राप्त करने के लिए अपना कैमरा भेजने वाली स्क्रीन की ओर करें।",
     cardReceiveAction: "प्राप्त करें",
-    shareSite: "Decimen शेयर करें",
+    shareSite: "LumaDrop शेयर करें",
     supportTitle: "मुफ़्त, ओपन सोर्स, बिना विज्ञापन",
     supportBodyHtml:
-      'अगर Decimen ने आपका काम आसान किया हो, तो आप <a href="https://buymeacoffee.com/bashalarmist" target="_blank" rel="noopener noreferrer">मुझे एक कॉफ़ी पिला सकते हैं</a>।',
+      'अगर LumaDrop ने आपका काम आसान किया हो, तो आप <a href="https://buymeacoffee.com/bashalarmist" target="_blank" rel="noopener noreferrer">मुझे एक कॉफ़ी पिला सकते हैं</a>।',
     shareDialogTitle: "यह ऐप शेयर करें",
     shareDialogHint: "इसे दूसरे डिवाइस के कैमरे से स्कैन करें, या उसे लिंक भेज दें।",
     siteLinkAriaLabel: "साइट लिंक",
@@ -51,7 +51,7 @@ export const messages: Messages = {
   },
 
   send: {
-    docTitle: "Decimen Optical Transfer — भेजें",
+    docTitle: "LumaDrop Optical — भेजें",
     eyebrow: "स्क्रीन → कैमरा",
     introCopy: "जब तक आप रिसीवर से स्कैन नहीं करते, आपके डिवाइस से कुछ भी बाहर नहीं जाता।",
     modeAriaLabel: "क्या भेजना है",
@@ -100,7 +100,7 @@ export const messages: Messages = {
     shareDialogTitle: "रिसीवर शेयर करें",
     shareDialogHint: "इसे दूसरे डिवाइस के कैमरे से स्कैन करें, या उसे लिंक भेज दें।",
     receiverLinkAriaLabel: "रिसीवर लिंक",
-    shareTitleData: "Decimen Optical Transfer — रिसीवर",
+    shareTitleData: "LumaDrop Optical — रिसीवर",
     loadingDemo: (name) => `${name} लोड किया जा रहा है…`,
     demoLoadFailed: (name, status) => `${name} लोड नहीं हो सका (${status})`,
     preparingFile: (name) => `${name} तैयार किया जा रहा है…`,
@@ -124,7 +124,7 @@ export const messages: Messages = {
   },
 
   receive: {
-    docTitle: "Decimen Optical Transfer — प्राप्त करें",
+    docTitle: "LumaDrop Optical — प्राप्त करें",
     eyebrow: "कैमरा → आपका डिवाइस",
     title: "प्राप्त करें",
     statusReady: "फ़ाइल या टेक्स्ट स्ट्रीम स्कैन करने के लिए तैयार",
@@ -203,7 +203,7 @@ export const messages: Messages = {
     mediaVideo: "वीडियो",
     mediaAudio: "ऑडियो",
     showMedia: (noun) => `${noun} दिखाएँ`,
-    clearCache: "Decimen कैश साफ़ करें",
+    clearCache: "LumaDrop कैश साफ़ करें",
     cacheCleared: "कैश साफ़ हो गया",
     clearCacheFailed: "साफ़ नहीं हो सका — फिर कोशिश करें",
     receivedPreviewAlt: (name) => `प्राप्त फ़ाइल का प्रीव्यू: ${name}`,
@@ -244,11 +244,11 @@ export const messages: Messages = {
 
   verdicts: {
     olderSender: (version) =>
-      `वह स्क्रीन पुराना Decimen फ़ॉर्मैट (v${version}) भेज रही है। भेजने वाले डिवाइस को अपडेट करें।`,
+      `वह स्क्रीन पुराना LumaDrop फ़ॉर्मैट (v${version}) भेज रही है। भेजने वाले डिवाइस को अपडेट करें।`,
     newerSender: (version) =>
-      `वह स्क्रीन नया Decimen फ़ॉर्मैट (v${version}) भेज रही है। इसे प्राप्त करने के लिए यह ऐप अपडेट करें।`,
+      `वह स्क्रीन नया LumaDrop फ़ॉर्मैट (v${version}) भेज रही है। इसे प्राप्त करने के लिए यह ऐप अपडेट करें।`,
     unsupportedFlags:
-      "वह स्ट्रीम Decimen की ऐसी सुविधा इस्तेमाल करती है जिसे यह वर्शन नहीं पढ़ सकता। इसे प्राप्त करने के लिए यह ऐप अपडेट करें।",
+      "वह स्ट्रीम LumaDrop की ऐसी सुविधा इस्तेमाल करती है जिसे यह वर्शन नहीं पढ़ सकता। इसे प्राप्त करने के लिए यह ऐप अपडेट करें।",
   },
 
   units: {
@@ -267,7 +267,7 @@ export const messages: Messages = {
     unreviewedNote:
       "यह अनुवाद मशीन से तैयार किया गया है और अभी तक किसी हिन्दी भाषी ने इसकी समीक्षा नहीं की है।",
     unreviewedLinkText: "अनुवाद की समस्या बताएँ",
-    switchOffer: "Decimen हिन्दी में उपलब्ध है।",
+    switchOffer: "LumaDrop हिन्दी में उपलब्ध है।",
     switchAction: "हिन्दी में देखें",
   },
 };

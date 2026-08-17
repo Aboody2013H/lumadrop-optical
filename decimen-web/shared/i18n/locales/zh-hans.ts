@@ -20,7 +20,7 @@ export const messages: Messages = {
   },
 
   home: {
-    title: "Decimen Optical Transfer — 用光传输文件",
+    title: "LumaDrop Optical — 用光传输文件",
     metaDescription:
       "只用一块屏幕和一个摄像头，就能在两台设备之间发送文件或文本。喷泉码动态二维码，中间没有任何网络链路。",
     ogDescription:
@@ -39,10 +39,10 @@ export const messages: Messages = {
     cardReceiveTitle: "对准即收",
     cardReceiveBody: "把摄像头对准发送方的屏幕，即可接收文件。",
     cardReceiveAction: "接收",
-    shareSite: "分享 Decimen",
+    shareSite: "分享 LumaDrop",
     supportTitle: "免费、开源、无广告",
     supportBodyHtml:
-      '如果 Decimen 帮到了你，欢迎<a href="https://buymeacoffee.com/bashalarmist" target="_blank" rel="noopener noreferrer">请我喝杯咖啡</a>。',
+      '如果 LumaDrop 帮到了你，欢迎<a href="https://buymeacoffee.com/bashalarmist" target="_blank" rel="noopener noreferrer">请我喝杯咖啡</a>。',
     shareDialogTitle: "分享这个应用",
     shareDialogHint: "用另一台设备的摄像头扫描此码，或把链接发过去。",
     siteLinkAriaLabel: "站点链接",
@@ -51,7 +51,7 @@ export const messages: Messages = {
   },
 
   send: {
-    docTitle: "Decimen Optical Transfer — 发送",
+    docTitle: "LumaDrop Optical — 发送",
     eyebrow: "屏幕 → 摄像头",
     introCopy: "在接收方扫描之前，任何数据都不会离开你的设备。",
     modeAriaLabel: "发送内容",
@@ -99,7 +99,7 @@ export const messages: Messages = {
     shareDialogTitle: "分享接收器",
     shareDialogHint: "用另一台设备的摄像头扫描此码，或把链接发过去。",
     receiverLinkAriaLabel: "接收器链接",
-    shareTitleData: "Decimen Optical Transfer — 接收器",
+    shareTitleData: "LumaDrop Optical — 接收器",
     loadingDemo: (name) => `正在加载 ${name}…`,
     demoLoadFailed: (name, status) => `无法加载 ${name}（${status}）`,
     preparingFile: (name) => `正在准备 ${name}…`,
@@ -122,7 +122,7 @@ export const messages: Messages = {
   },
 
   receive: {
-    docTitle: "Decimen Optical Transfer — 接收",
+    docTitle: "LumaDrop Optical — 接收",
     eyebrow: "摄像头 → 你的设备",
     title: "接收",
     statusReady: "准备扫描文件或文本流",
@@ -198,7 +198,7 @@ export const messages: Messages = {
     mediaVideo: "视频",
     mediaAudio: "音频",
     showMedia: (noun) => `显示${noun}`,
-    clearCache: "清除 Decimen 缓存",
+    clearCache: "清除 LumaDrop 缓存",
     cacheCleared: "缓存已清除",
     clearCacheFailed: "清除失败——请重试",
     receivedPreviewAlt: (name) => `接收文件预览：${name}`,
@@ -239,10 +239,10 @@ export const messages: Messages = {
 
   verdicts: {
     olderSender: (version) =>
-      `对方屏幕正在以较旧的 Decimen 格式（v${version}）发送。请更新发送设备。`,
+      `对方屏幕正在以较旧的 LumaDrop 格式（v${version}）发送。请更新发送设备。`,
     newerSender: (version) =>
-      `对方屏幕正在以较新的 Decimen 格式（v${version}）发送。请更新本应用后再接收。`,
-    unsupportedFlags: "该数据流使用了此版本无法读取的 Decimen 功能。请更新本应用后再接收。",
+      `对方屏幕正在以较新的 LumaDrop 格式（v${version}）发送。请更新本应用后再接收。`,
+    unsupportedFlags: "该数据流使用了此版本无法读取的 LumaDrop 功能。请更新本应用后再接收。",
   },
 
   units: {
@@ -260,7 +260,7 @@ export const messages: Messages = {
     languageSelectLabel: "语言",
     unreviewedNote: "本翻译由机器起草，尚未经母语人士审校。",
     unreviewedLinkText: "报告翻译问题",
-    switchOffer: "Decimen 提供简体中文版。",
+    switchOffer: "LumaDrop 提供简体中文版。",
     switchAction: "查看简体中文版",
   },
 };

@@ -1,6 +1,6 @@
 {
-  "name": "Decimen Optical Transfer",
-  "short_name": "Decimen",
+  "name": "LumaDrop Optical",
+  "short_name": "LumaDrop",
   "description": "Envoyez un fichier ou du texte entre deux appareils avec rien d’autre qu’un écran et une caméra. Des codes QR animés à codage fontaine, sans aucun chemin réseau entre les deux.",
   "theme_color": "#070a11",
   "background_color": "#070a11",

@@ -31,7 +31,7 @@ The current APK is release-signed and works on Android 6.0/API 23 or newer. The 
 
 Already have one of those debug builds installed? Android may make you uninstall it before installing the release version because the signatures are different.
 
-All ten builds—from the original native prototype through `0.5.2-luma.9`—are still available. The [changelog](CHANGELOG.md) tells the story build by build.
+All eleven builds—from the original native prototype through `0.5.2-luma.10`—are still available. The [changelog](CHANGELOG.md) tells the story build by build.
 
 ## Build it yourself
 

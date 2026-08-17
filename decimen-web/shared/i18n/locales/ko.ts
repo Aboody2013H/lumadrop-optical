@@ -20,7 +20,7 @@ export const messages: Messages = {
   },
 
   home: {
-    title: "Decimen Optical Transfer — 빛으로 파일 전송",
+    title: "LumaDrop Optical — 빛으로 파일 전송",
     metaDescription:
       "화면과 카메라만으로 두 기기 사이에 파일이나 텍스트를 전송합니다. 파운틴 코딩된 애니메이션 QR 코드로 전해지며, 중간에 네트워크 경로가 없습니다.",
     ogDescription:
@@ -39,10 +39,10 @@ export const messages: Messages = {
     cardReceiveTitle: "카메라를 비춰 받기",
     cardReceiveBody: "보내는 쪽 화면에 카메라를 비추면 파일을 받습니다.",
     cardReceiveAction: "받기",
-    shareSite: "Decimen 공유",
+    shareSite: "LumaDrop 공유",
     supportTitle: "무료, 오픈 소스, 광고 없음",
     supportBodyHtml:
-      'Decimen이 도움이 되었다면 <a href="https://buymeacoffee.com/bashalarmist" target="_blank" rel="noopener noreferrer">커피 한 잔</a>으로 응원해 주세요.',
+      'LumaDrop이 도움이 되었다면 <a href="https://buymeacoffee.com/bashalarmist" target="_blank" rel="noopener noreferrer">커피 한 잔</a>으로 응원해 주세요.',
     shareDialogTitle: "이 앱 공유",
     shareDialogHint: "다른 기기의 카메라로 이 코드를 스캔하거나, 링크를 보내 주세요.",
     siteLinkAriaLabel: "사이트 링크",
@@ -51,7 +51,7 @@ export const messages: Messages = {
   },
 
   send: {
-    docTitle: "Decimen Optical Transfer — 보내기",
+    docTitle: "LumaDrop Optical — 보내기",
     eyebrow: "화면 → 카메라",
     introCopy: "수신기로 스캔하기 전까지는 아무것도 이 기기를 떠나지 않습니다.",
     modeAriaLabel: "보낼 항목",
@@ -100,7 +100,7 @@ export const messages: Messages = {
     shareDialogTitle: "수신기 공유",
     shareDialogHint: "다른 기기의 카메라로 이 코드를 스캔하거나, 링크를 보내 주세요.",
     receiverLinkAriaLabel: "수신기 링크",
-    shareTitleData: "Decimen Optical Transfer — 수신기",
+    shareTitleData: "LumaDrop Optical — 수신기",
     loadingDemo: (name) => `${name} 불러오는 중…`,
     demoLoadFailed: (name, status) => `${name} 불러오기 실패 (${status})`,
     preparingFile: (name) => `${name} 준비 중…`,
@@ -125,7 +125,7 @@ export const messages: Messages = {
   },
 
   receive: {
-    docTitle: "Decimen Optical Transfer — 받기",
+    docTitle: "LumaDrop Optical — 받기",
     eyebrow: "카메라 → 내 기기",
     title: "받기",
     statusReady: "파일 또는 텍스트 스트림을 스캔할 준비가 되었습니다",
@@ -204,7 +204,7 @@ export const messages: Messages = {
     mediaVideo: "동영상",
     mediaAudio: "오디오",
     showMedia: (noun) => `${noun} 표시`,
-    clearCache: "Decimen 캐시 지우기",
+    clearCache: "LumaDrop 캐시 지우기",
     cacheCleared: "캐시를 지웠습니다",
     clearCacheFailed: "지우기 실패 — 다시 시도하세요",
     receivedPreviewAlt: (name) => `받은 파일 미리보기: ${name}`,
@@ -245,11 +245,11 @@ export const messages: Messages = {
 
   verdicts: {
     olderSender: (version) =>
-      `상대 화면이 이전 버전의 Decimen 형식(v${version})을 보내고 있습니다. 보내는 기기를 업데이트하세요.`,
+      `상대 화면이 이전 버전의 LumaDrop 형식(v${version})을 보내고 있습니다. 보내는 기기를 업데이트하세요.`,
     newerSender: (version) =>
-      `상대 화면이 더 새로운 Decimen 형식(v${version})을 보내고 있습니다. 받으려면 이 앱을 업데이트하세요.`,
+      `상대 화면이 더 새로운 LumaDrop 형식(v${version})을 보내고 있습니다. 받으려면 이 앱을 업데이트하세요.`,
     unsupportedFlags:
-      "이 스트림은 이 버전에서 읽을 수 없는 Decimen 기능을 사용합니다. 받으려면 이 앱을 업데이트하세요.",
+      "이 스트림은 이 버전에서 읽을 수 없는 LumaDrop 기능을 사용합니다. 받으려면 이 앱을 업데이트하세요.",
   },
 
   units: {
@@ -268,7 +268,7 @@ export const messages: Messages = {
     unreviewedNote:
       "이 번역은 기계 번역 초안으로, 아직 원어민의 검수를 거치지 않았습니다.",
     unreviewedLinkText: "번역 문제 신고",
-    switchOffer: "Decimen을 한국어로 볼 수 있습니다.",
+    switchOffer: "LumaDrop을 한국어로 볼 수 있습니다.",
     switchAction: "한국어로 보기",
   },
 };

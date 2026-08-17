@@ -19,7 +19,7 @@ export const messages: Messages = {
   },
 
   home: {
-    title: "Decimen Optical Transfer — Dateien mit Licht übertragen",
+    title: "LumaDrop Optical — Dateien mit Licht übertragen",
     metaDescription:
       "Senden Sie eine Datei oder Text zwischen zwei Geräten — nur mit Bildschirm und Kamera. Fountain-codierte animierte QR-Codes, ganz ohne Netzwerkverbindung dazwischen.",
     ogDescription:
@@ -40,10 +40,10 @@ export const messages: Messages = {
     cardReceiveBody:
       "Richten Sie Ihre Kamera auf den Bildschirm des Senders, um die Datei zu empfangen.",
     cardReceiveAction: "Empfangen",
-    shareSite: "Decimen teilen",
+    shareSite: "LumaDrop teilen",
     supportTitle: "Kostenlos, Open Source, ohne Werbung",
     supportBodyHtml:
-      'Wenn Decimen Ihnen den Tag leichter gemacht hat, können Sie mir <a href="https://buymeacoffee.com/bashalarmist" target="_blank" rel="noopener noreferrer">einen Kaffee spendieren</a>.',
+      'Wenn LumaDrop Ihnen den Tag leichter gemacht hat, können Sie mir <a href="https://buymeacoffee.com/bashalarmist" target="_blank" rel="noopener noreferrer">einen Kaffee spendieren</a>.',
     shareDialogTitle: "Diese App teilen",
     shareDialogHint:
       "Scannen Sie den Code mit der Kamera eines anderen Geräts, oder schicken Sie ihm den Link.",
@@ -53,7 +53,7 @@ export const messages: Messages = {
   },
 
   send: {
-    docTitle: "Decimen Optical Transfer — Senden",
+    docTitle: "LumaDrop Optical — Senden",
     eyebrow: "Bildschirm → Kamera",
     introCopy: "Nichts verlässt Ihr Gerät, bis Sie mit einem Empfänger scannen.",
     modeAriaLabel: "Was gesendet wird",
@@ -105,7 +105,7 @@ export const messages: Messages = {
     shareDialogHint:
       "Scannen Sie den Code mit der Kamera des anderen Geräts, oder schicken Sie ihm den Link.",
     receiverLinkAriaLabel: "Empfänger-Link",
-    shareTitleData: "Decimen Optical Transfer — Empfänger",
+    shareTitleData: "LumaDrop Optical — Empfänger",
     loadingDemo: (name) => `lade ${name}…`,
     demoLoadFailed: (name, status) => `${name} konnte nicht geladen werden (${status})`,
     preparingFile: (name) => `bereite ${name} vor…`,
@@ -129,7 +129,7 @@ export const messages: Messages = {
   },
 
   receive: {
-    docTitle: "Decimen Optical Transfer — Empfangen",
+    docTitle: "LumaDrop Optical — Empfangen",
     eyebrow: "Kamera → Ihr Gerät",
     title: "Empfangen",
     statusReady: "Bereit, eine Datei oder einen Textstream zu scannen",
@@ -210,7 +210,7 @@ export const messages: Messages = {
     mediaVideo: "Video",
     mediaAudio: "Audio",
     showMedia: (noun) => `${noun} anzeigen`,
-    clearCache: "Decimen-Cache leeren",
+    clearCache: "LumaDrop-Cache leeren",
     cacheCleared: "Cache geleert",
     clearCacheFailed: "Leeren fehlgeschlagen — erneut versuchen",
     receivedPreviewAlt: (name) => `Vorschau der empfangenen Datei: ${name}`,
@@ -255,11 +255,11 @@ export const messages: Messages = {
 
   verdicts: {
     olderSender: (version) =>
-      `Dieser Bildschirm sendet ein älteres Decimen-Format (v${version}). Aktualisieren Sie das sendende Gerät.`,
+      `Dieser Bildschirm sendet ein älteres LumaDrop-Format (v${version}). Aktualisieren Sie das sendende Gerät.`,
     newerSender: (version) =>
-      `Dieser Bildschirm sendet ein neueres Decimen-Format (v${version}). Aktualisieren Sie diese App, um es zu empfangen.`,
+      `Dieser Bildschirm sendet ein neueres LumaDrop-Format (v${version}). Aktualisieren Sie diese App, um es zu empfangen.`,
     unsupportedFlags:
-      "Dieser Stream nutzt eine Decimen-Funktion, die diese Version nicht lesen kann. Aktualisieren Sie diese App, um ihn zu empfangen.",
+      "Dieser Stream nutzt eine LumaDrop-Funktion, die diese Version nicht lesen kann. Aktualisieren Sie diese App, um ihn zu empfangen.",
   },
 
   units: {
@@ -278,7 +278,7 @@ export const messages: Messages = {
     unreviewedNote:
       "Diese Übersetzung wurde maschinell erstellt und noch nicht von einem Muttersprachler geprüft.",
     unreviewedLinkText: "Übersetzungsfehler melden",
-    switchOffer: "Decimen ist auf Deutsch verfügbar.",
+    switchOffer: "LumaDrop ist auf Deutsch verfügbar.",
     switchAction: "Auf Deutsch ansehen",
   },
 };

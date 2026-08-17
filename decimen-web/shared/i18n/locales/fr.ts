@@ -21,7 +21,7 @@ export const messages: Messages = {
   },
 
   home: {
-    title: "Decimen Optical Transfer — transférer des fichiers par la lumière",
+    title: "LumaDrop Optical — transférer des fichiers par la lumière",
     metaDescription:
       "Envoyez un fichier ou du texte entre deux appareils avec rien d’autre qu’un écran et une caméra. Des codes QR animés à codage fontaine, sans aucun chemin réseau entre les deux.",
     ogDescription:
@@ -42,10 +42,10 @@ export const messages: Messages = {
     cardReceiveBody:
       "Pointez votre caméra vers l’écran de l’expéditeur pour recevoir le fichier.",
     cardReceiveAction: "Recevoir",
-    shareSite: "Partager Decimen",
+    shareSite: "Partager LumaDrop",
     supportTitle: "Gratuit, open source, sans publicité",
     supportBodyHtml:
-      'Si Decimen vous a facilité la vie, vous pouvez <a href="https://buymeacoffee.com/bashalarmist" target="_blank" rel="noopener noreferrer">m’offrir un café</a>.',
+      'Si LumaDrop vous a facilité la vie, vous pouvez <a href="https://buymeacoffee.com/bashalarmist" target="_blank" rel="noopener noreferrer">m’offrir un café</a>.',
     shareDialogTitle: "Partager cette application",
     shareDialogHint:
       "Scannez ceci avec la caméra d’un autre appareil, ou envoyez-lui le lien.",
@@ -55,7 +55,7 @@ export const messages: Messages = {
   },
 
   send: {
-    docTitle: "Decimen Optical Transfer — envoyer",
+    docTitle: "LumaDrop Optical — envoyer",
     eyebrow: "Écran → caméra",
     introCopy:
       "Rien ne quitte votre appareil tant que vous ne scannez pas l’écran avec un récepteur.",
@@ -108,7 +108,7 @@ export const messages: Messages = {
     shareDialogHint:
       "Scannez ceci avec la caméra de l’autre appareil, ou envoyez-lui le lien.",
     receiverLinkAriaLabel: "Lien du récepteur",
-    shareTitleData: "Decimen Optical Transfer — récepteur",
+    shareTitleData: "LumaDrop Optical — récepteur",
     loadingDemo: (name) => `chargement de ${name}…`,
     demoLoadFailed: (name, status) => `impossible de charger ${name} (${status})`,
     preparingFile: (name) => `préparation de ${name}…`,
@@ -133,7 +133,7 @@ export const messages: Messages = {
   },
 
   receive: {
-    docTitle: "Decimen Optical Transfer — recevoir",
+    docTitle: "LumaDrop Optical — recevoir",
     eyebrow: "Caméra → votre appareil",
     title: "Recevoir",
     statusReady: "Prêt à scanner un flux de fichier ou de texte",
@@ -218,7 +218,7 @@ export const messages: Messages = {
     mediaVideo: "la vidéo",
     mediaAudio: "l’audio",
     showMedia: (noun) => `Afficher ${noun}`,
-    clearCache: "Vider le cache Decimen",
+    clearCache: "Vider le cache LumaDrop",
     cacheCleared: "Cache vidé",
     clearCacheFailed: "Échec du vidage — réessayez",
     receivedPreviewAlt: (name) => `Aperçu du fichier reçu : ${name}`,
@@ -265,13 +265,13 @@ export const messages: Messages = {
 
   verdicts: {
     olderSender: (version) =>
-      `Cet écran envoie un format Decimen plus ancien (v${version}). Mettez à jour ` +
+      `Cet écran envoie un format LumaDrop plus ancien (v${version}). Mettez à jour ` +
       `l’appareil émetteur.`,
     newerSender: (version) =>
-      `Cet écran envoie un format Decimen plus récent (v${version}). Mettez à jour ` +
+      `Cet écran envoie un format LumaDrop plus récent (v${version}). Mettez à jour ` +
       `cette application pour le recevoir.`,
     unsupportedFlags:
-      "Ce flux utilise une fonctionnalité Decimen que cette version ne sait pas lire. " +
+      "Ce flux utilise une fonctionnalité LumaDrop que cette version ne sait pas lire. " +
       "Mettez à jour cette application pour le recevoir.",
   },
 
@@ -295,7 +295,7 @@ export const messages: Messages = {
       "Cette traduction a été générée automatiquement et n’a pas encore été relue par " +
       "un locuteur natif.",
     unreviewedLinkText: "Signaler un problème de traduction",
-    switchOffer: "Decimen est disponible en français.",
+    switchOffer: "LumaDrop est disponible en français.",
     switchAction: "Voir en français",
   },
 };

@@ -1,7 +1,7 @@
 {
-  "name": "decimen-optical-transfer",
+  "name": "lumadrop-optical",
   "private": true,
-  "version": "0.5.2",
+  "version": "0.5.2-luma.10",
   "license": "AGPL-3.0-or-later",
   "engines": {
     "node": ">=24"

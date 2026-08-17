@@ -1,8 +1,15 @@
 # Changelog
 
-LumaDrop moved fast, so there were ten Android builds in a pretty short stretch. Here's what actually changed in each one. The `luma.N` versions are based on Decimen 0.5.2.
+LumaDrop moved fast, so there were eleven Android builds in a pretty short stretch. Here's what actually changed in each one. The `luma.N` versions are based on Decimen 0.5.2.
 
-> **A note about the old builds:** the GitHub repo was created after `luma.9`, so the exact source snapshot for each earlier APK was never committed. The APKs are the real archived builds, but their tags point at the consolidated public source instead of pretending the old source can be reproduced byte for byte. Unless you're curious about the history, download `luma.9`.
+> **A note about the old builds:** the GitHub repo was created after `luma.9`, so the exact source snapshot for each earlier APK was never committed. The APKs are the real archived builds, but their tags point at the consolidated public source instead of pretending the old source can be reproduced byte for byte. Unless you're curious about the history, download the newest release.
+
+## 0.5.2-luma.10 — 2026-08-17
+
+- Finished the visible rebrand from Decimen to LumaDrop across the app and all bundled languages.
+- Pointed the GitHub, Releases, license, and issue links at the LumaDrop repository.
+- Updated the footer credit to Aboody Habash (Aboody2013H).
+- Kept the original Decimen notices and protocol identifiers where attribution and compatibility require them.
 
 ## 0.5.2-luma.9 — 2026-08-17
 

@@ -51,8 +51,8 @@ const pkg = JSON.parse(readFileSync(resolve(__dirname, "package.json"), "utf8"))
 // Shared between the root PWA manifest and the per-locale manifests emitted
 // by i18nPages() — one identity, translated descriptions.
 const MANIFEST_BASE = {
-  name: "Decimen Optical Transfer",
-  short_name: "Decimen",
+  name: "LumaDrop Optical",
+  short_name: "LumaDrop",
   description:
     "Send a file or text between two devices with a screen and a camera. No network.",
   theme_color: "#070a11",

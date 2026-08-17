@@ -15,7 +15,7 @@
 //     functions and not concatenation at the call site.
 //
 // FOR TRANSLATORS
-//   - Keep "Decimen" and "Decimen Optical Transfer" untranslated; same for
+//   - Keep "LumaDrop" and "LumaDrop Optical" untranslated; same for
 //     license names (AGPL-3.0-or-later), "QR", "SHA-256", "gzip", "fps",
 //     "KB"/"MB" style units unless your language has an established form.
 //   - Values marked ...Html may contain the same inline tags the English text
@@ -61,7 +61,7 @@ export interface Messages {
     cardReceiveTitle: string;
     cardReceiveBody: string;
     cardReceiveAction: string; // "Receive"
-    shareSite: string; // "Share Decimen"
+    shareSite: string; // "Share LumaDrop"
     supportTitle: string; // "Free, open source, no ads"
     supportBodyHtml: string; // carries an <a …>coffee link</a>
     shareDialogTitle: string; // "Share this app"
@@ -72,7 +72,7 @@ export interface Messages {
 
   /** Send page: static markup and runtime messages together. */
   send: {
-    docTitle: string; // "Decimen Optical Transfer — send"
+    docTitle: string; // "LumaDrop Optical — send"
     eyebrow: string; // "Screen → camera"
     introCopy: string;
     modeAriaLabel: string; // "What to send"

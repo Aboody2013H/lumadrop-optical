@@ -20,7 +20,7 @@ export const messages: Messages = {
   },
 
   home: {
-    title: "Decimen Optical Transfer — transfira arquivos com luz",
+    title: "LumaDrop Optical — transfira arquivos com luz",
     metaDescription:
       "Envie um arquivo ou texto entre dois dispositivos usando apenas uma tela e uma câmera. Códigos QR animados com codificação fountain, sem nenhum caminho de rede no meio.",
     ogDescription:
@@ -40,10 +40,10 @@ export const messages: Messages = {
     cardReceiveTitle: "Aponte e receba",
     cardReceiveBody: "Aponte a câmera para a tela do remetente para receber o arquivo.",
     cardReceiveAction: "Receber",
-    shareSite: "Compartilhar o Decimen",
+    shareSite: "Compartilhar o LumaDrop",
     supportTitle: "Gratuito, código aberto, sem anúncios",
     supportBodyHtml:
-      'Se o Decimen facilitou o seu dia, você pode <a href="https://buymeacoffee.com/bashalarmist" target="_blank" rel="noopener noreferrer">me pagar um café</a>.',
+      'Se o LumaDrop facilitou o seu dia, você pode <a href="https://buymeacoffee.com/bashalarmist" target="_blank" rel="noopener noreferrer">me pagar um café</a>.',
     shareDialogTitle: "Compartilhar este app",
     shareDialogHint: "Escaneie com a câmera de outro dispositivo, ou envie o link para ele.",
     siteLinkAriaLabel: "Link do site",
@@ -52,7 +52,7 @@ export const messages: Messages = {
   },
 
   send: {
-    docTitle: "Decimen Optical Transfer — enviar",
+    docTitle: "LumaDrop Optical — enviar",
     eyebrow: "Tela → câmera",
     introCopy: "Nada sai do seu dispositivo até você escanear com um receptor.",
     modeAriaLabel: "O que enviar",
@@ -101,7 +101,7 @@ export const messages: Messages = {
     shareDialogTitle: "Compartilhar o receptor",
     shareDialogHint: "Escaneie com a câmera do outro dispositivo, ou envie o link para ele.",
     receiverLinkAriaLabel: "Link do receptor",
-    shareTitleData: "Decimen Optical Transfer — receptor",
+    shareTitleData: "LumaDrop Optical — receptor",
     loadingDemo: (name) => `carregando ${name}…`,
     demoLoadFailed: (name, status) => `não foi possível carregar ${name} (${status})`,
     preparingFile: (name) => `preparando ${name}…`,
@@ -124,7 +124,7 @@ export const messages: Messages = {
   },
 
   receive: {
-    docTitle: "Decimen Optical Transfer — receber",
+    docTitle: "LumaDrop Optical — receber",
     eyebrow: "Câmera → seu dispositivo",
     title: "Receber",
     statusReady: "Pronto para escanear um fluxo de arquivo ou de texto",
@@ -203,7 +203,7 @@ export const messages: Messages = {
     mediaVideo: "vídeo",
     mediaAudio: "áudio",
     showMedia: (noun) => `Mostrar ${noun}`,
-    clearCache: "Limpar cache do Decimen",
+    clearCache: "Limpar cache do LumaDrop",
     cacheCleared: "Cache limpo",
     clearCacheFailed: "Falha ao limpar — tente de novo",
     receivedPreviewAlt: (name) => `Prévia do arquivo recebido: ${name}`,
@@ -246,11 +246,11 @@ export const messages: Messages = {
 
   verdicts: {
     olderSender: (version) =>
-      `Aquela tela está enviando um formato Decimen mais antigo (v${version}). Atualize o dispositivo de envio.`,
+      `Aquela tela está enviando um formato LumaDrop mais antigo (v${version}). Atualize o dispositivo de envio.`,
     newerSender: (version) =>
-      `Aquela tela está enviando um formato Decimen mais novo (v${version}). Atualize este app para recebê-lo.`,
+      `Aquela tela está enviando um formato LumaDrop mais novo (v${version}). Atualize este app para recebê-lo.`,
     unsupportedFlags:
-      "Esse fluxo usa um recurso do Decimen que esta versão não consegue ler. Atualize este app para recebê-lo.",
+      "Esse fluxo usa um recurso do LumaDrop que esta versão não consegue ler. Atualize este app para recebê-lo.",
   },
 
   units: {
@@ -269,7 +269,7 @@ export const messages: Messages = {
     unreviewedNote:
       "Esta tradução é um rascunho gerado por máquina e ainda não foi revisada por um falante nativo.",
     unreviewedLinkText: "Relatar problema de tradução",
-    switchOffer: "O Decimen está disponível em português.",
+    switchOffer: "O LumaDrop está disponível em português.",
     switchAction: "Ver em português",
   },
 };

@@ -6,7 +6,7 @@ Decimen Optical Transfer
 Copyright (c) 2026 Evan Crawley (Bash Alarmist)
 
 LumaDrop Android integration and modifications
-Copyright (c) 2026 Aboody2013H
+Copyright (c) 2026 Aboody Habash (Aboody2013H)
 
 The combined work is distributed under the GNU Affero General Public License, version 3 or (at your option) any later version. See `LICENSE` for the complete terms.
 

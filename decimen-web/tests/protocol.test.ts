@@ -345,14 +345,14 @@ test("a v3 receiver names a pre-versioning sender instead of going quiet", () =>
   ] as const) {
     const verdict = classifyFrame(withByte(1, marker));
     assert.deepEqual(verdict, { kind: "older-sender", version });
-    assert.match(frameVerdictMessage(verdict)!, /older Decimen format/);
+    assert.match(frameVerdictMessage(verdict)!, /older LumaDrop format/);
   }
 });
 
 test("a v3 receiver names a newer sender instead of going quiet", () => {
   const verdict = classifyFrame(withByte(2, WIRE_VERSION + 1));
   assert.deepEqual(verdict, { kind: "newer-sender", version: WIRE_VERSION + 1 });
-  assert.match(frameVerdictMessage(verdict)!, /newer Decimen format/);
+  assert.match(frameVerdictMessage(verdict)!, /newer LumaDrop format/);
   // The whole point: an install in the field that predates a format can still
   // explain itself, which is what store binaries need and v2 could not do.
   assert.equal(parseFrame(withByte(2, WIRE_VERSION + 1)), null);

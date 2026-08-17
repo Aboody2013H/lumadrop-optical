@@ -1735,7 +1735,7 @@ body {
 }
 
 .hero::before {
-  content: "OPTICAL DATA LINK  /  DECIMEN ENGINE";
+  content: "OPTICAL DATA LINK  /  LUMADROP ENGINE";
   display: block;
   width: fit-content;
   margin-bottom: 18px;

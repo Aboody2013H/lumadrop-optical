@@ -1,0 +1,2 @@
+/*! Decimen Optical Transfer v0.5.2-luma.10 — https://decimen.app — (c) 2026 Evan Crawley (Bash Alarmist) — SPDX-License-Identifier: AGPL-3.0-or-later — portions MIT: (c) 2026 Steve Dakh; Emscripten (see NOTICE) — Source: https://github.com/bashalarmistalt/decimen-optical-transfer */
+import{i as e}from"./dialog-CuYRSGfM.js";import{w as i}from"./share-dialog-DaJzihBC.js";await e();document.getElementById("share-open").addEventListener("click",i());
