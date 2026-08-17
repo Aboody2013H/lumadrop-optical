@@ -72,7 +72,7 @@ File processing and optical encoding happen locally. The receiver needs camera p
 
 ## Development note
 
-LumaDrop was vibe-coded in collaboration with OpenAI Codex and ChatGPT—turning an idea into a tested Android release through rapid, conversation-driven design, implementation, debugging, and iteration.
+LumaDrop was vibe-coded using Codex and ChatGPT—turning an idea into a tested Android release through rapid, conversation-driven design, implementation, debugging, and iteration.
 
 ## Origin and license
 
