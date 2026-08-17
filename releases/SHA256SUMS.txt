@@ -1,1 +1,10 @@
+f950486e06f6a1408384428b7d227d23957fe4e4dcbcbd380439a6f8227e24d3  LumaDrop-Native-v0.1.0-debug.apk
+aa100df08c4372160922be39def2e25a8f60bdc08dbd228d80ebcec1e7200775  LumaDrop-Optical-v0.5.2-debug.apk
+dd79adabc6d672b32e66b9a556042cbf37a78c0388bd19530902cd73646e0034  LumaDrop-Optical-v0.5.2-luma2-debug.apk
+fa76acc44d23e64441e356248616b8195304b07c43eb9110e2ce1a64219dfbcd  LumaDrop-Optical-v0.5.2-luma3-debug.apk
+ee7a0d0a4677db606dd8dc75c997772c96c69fd8e8929640cec7d7788f35269e  LumaDrop-Optical-v0.5.2-luma4-debug.apk
+9763d9471746a60acb7bdd2285ab81499851ccb1ca1a1755b3ecaeed88bec40d  LumaDrop-Optical-v0.5.2-luma5-debug.apk
+051687691d206c13831f792eeb49cd1efc2fe78809694a66cb3758c2e4603075  LumaDrop-Optical-v0.5.2-luma6-debug.apk
+2747d9281958a5a2ec7884e8278dbbcc32801f960bb15f8b2054fca0d5586fc6  LumaDrop-Optical-v0.5.2-luma7-debug.apk
+88e6e284ca104f5c5444cdedbeee8283723e1d4f269ac517ec423d3b78150bed  LumaDrop-Optical-v0.5.2-luma8-debug.apk
 3be2406a7a6b5b6ca2c4e4675537fc844e470553118584ed9fb438226be5895d  LumaDrop-Optical-v0.5.2-luma9-debug.apk

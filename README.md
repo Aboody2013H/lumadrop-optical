@@ -29,6 +29,8 @@ Download the newest APK from [GitHub Releases](https://github.com/Aboody2013H/lu
 
 The current downloadable artifact is debug-signed for direct sideloading. Android 6.0/API 23 or newer is required.
 
+All ten development APKs—from the original native prototype through `0.5.2-luma.9`—are preserved on the Releases page. See the [changelog](CHANGELOG.md) for the feature added in each build and known historical limitations.
+
 ## Build from source
 
 Requirements:
