@@ -4,44 +4,44 @@
   <img src="branding/lumadrop-icon-v2-master.png" width="220" alt="LumaDrop Optical icon">
 </p>
 
-LumaDrop transfers files directly from one screen to another phone's camera using animated, fountain-coded QR frames. It needs no account, pairing, Bluetooth, internet connection, or shared Wi-Fi network.
+LumaDrop moves files between phones by turning one screen into a stream of animated QR codes and using the other phone's camera to catch them. No accounts, no pairing, no Bluetooth, and no shared Wi-Fi—just point one phone at the other.
 
-This project packages a modified version of [Decimen Optical Transfer](https://github.com/bashalarmistalt/decimen-optical-transfer) as a fully offline Android application and adds an Android-focused interface and integrations.
+It started as an experiment and grew into an offline Android version of [Decimen Optical Transfer](https://github.com/bashalarmistalt/decimen-optical-transfer), with a new interface and a bunch of Android-specific features added along the way.
 
-## Highlights
+## What it can do
 
-- Send any file type up to 64 MB.
-- Select multiple files and transfer them together as a standards-compatible ZIP archive.
-- Share files from another Android app directly into LumaDrop.
-- Recover from missed or duplicate QR frames using fountain coding.
-- Receive through the rear or front camera.
-- Zoom from 1x to 10x with a slider, pinch gesture, or mouse wheel.
-- Automatically maximize sender brightness during transmission and restore it afterward.
-- Save received files through Android's native document picker.
-- Run entirely from bundled app assets after installation.
-- Transfer text snippets as well as files.
+- Send any kind of file up to 64 MB.
+- Bundle several files into one ZIP and send them together.
+- Open LumaDrop straight from Android's Share menu.
+- Keep going when the camera misses or sees the same QR frame twice.
+- Use either the rear or front camera.
+- Zoom from 1x to 10x with the slider, a pinch gesture, or the mouse wheel.
+- Turn the sender's brightness up during a transfer and put it back afterward.
+- Save received files through Android's normal file picker.
+- Send text snippets as well as files.
+- Work completely offline once the app is installed.
 
-Transfer speed depends heavily on the sender display, camera exposure, focus, QR density, and device performance. A target frame rate is not a guaranteed throughput figure.
+Speed depends on both phones. Screen refresh rate, camera exposure, focus, QR density, and general device performance all make a difference, so 60 FPS should be treated as a target rather than a promise.
 
-## Install
+## Install it
 
-Download the newest APK from [GitHub Releases](https://github.com/Aboody2013H/lumadrop-optical/releases). Android may ask you to allow installation from your browser or file manager.
+Grab the newest APK from [GitHub Releases](https://github.com/Aboody2013H/lumadrop-optical/releases). Android may ask you to allow installs from your browser or file manager.
 
-The current downloadable artifact is release-signed for direct sideloading. Android 6.0/API 23 or newer is required. Archived development builds remain debug-signed.
+The current APK is release-signed and works on Android 6.0/API 23 or newer. The older builds on the Releases page are kept for the project's history and are debug-signed.
 
-If an older debug-signed LumaDrop build is already installed, Android may require it to be uninstalled before installing the release-signed build because the signing certificates are different.
+Already have one of those debug builds installed? Android may make you uninstall it before installing the release version because the signatures are different.
 
-All ten development APKs—from the original native prototype through `0.5.2-luma.9`—are preserved on the Releases page. See the [changelog](CHANGELOG.md) for the feature added in each build and known historical limitations.
+All ten builds—from the original native prototype through `0.5.2-luma.9`—are still available. The [changelog](CHANGELOG.md) tells the story build by build.
 
-## Build from source
+## Build it yourself
 
-Requirements:
+You'll need:
 
 - Node.js 24 or newer
 - JDK 17
 - Android SDK 36
 
-Build and test the web application:
+Build and test the web app first:
 
 ```bash
 cd decimen-web
@@ -50,32 +50,32 @@ npm test
 npm run build
 ```
 
-Copy the contents of `decimen-web/dist/` into `decimenApp/src/main/assets/web/` when web application code changes, then build the Android wrapper from the repository root:
+If you changed the web app, copy everything from `decimen-web/dist/` into `decimenApp/src/main/assets/web/`. Then build the Android wrapper from the repository root:
 
 ```bash
 ./gradlew :decimenApp:lintDebug :decimenApp:assembleDebug
 ```
 
-The APK is written to `decimenApp/build/outputs/apk/debug/decimenApp-debug.apk`.
+You'll find the APK at `decimenApp/build/outputs/apk/debug/decimenApp-debug.apk`.
 
-## Project layout
+## What's where
 
-- `decimen-web/` — modified Decimen web application and optical protocol tests.
-- `decimenApp/` — primary offline Android WebView wrapper and native bridges.
-- `app/` — earlier native Kotlin/Compose LumaDrop prototype retained for reference.
-- `branding/` — LumaDrop artwork and icon master.
-- `releases/` — checksum metadata; APK binaries are published through GitHub Releases.
+- `decimen-web/` — the modified Decimen web app and optical-protocol tests.
+- `decimenApp/` — the Android app people should actually use.
+- `app/` — the earlier native Kotlin/Compose prototype, kept for reference.
+- `branding/` — the LumaDrop icon and artwork.
+- `releases/` — release notes and checksums. The APKs themselves live on GitHub Releases.
 
-## Privacy and security
+## Privacy and safety
 
-File processing and optical encoding happen locally. The receiver needs camera permission. LumaDrop does not require an account or a server for transfers. As with any file-transfer tool, only open received files when you trust the sender.
+Encoding and decoding happen on the phones. LumaDrop needs camera permission on the receiving side, but it does not need an account or a transfer server. As always, only open a received file when you trust where it came from.
 
-## Development note
+## How it was made
 
-LumaDrop was vibe-coded using Codex and ChatGPT—turning an idea into a tested Android release through rapid, conversation-driven design, implementation, debugging, and iteration.
+LumaDrop was vibe-coded using Codex and ChatGPT. The app took shape through a lot of quick back-and-forth: try an idea, test it on real phones, fix what broke, and repeat.
 
-## Origin and license
+## Credit and license
 
-LumaDrop is a modified distribution of Decimen Optical Transfer by Evan Crawley (Bash Alarmist). Decimen and the LumaDrop modifications are distributed under the GNU Affero General Public License v3.0 or later. Original copyright, contribution, codec, and third-party notices are retained in [NOTICE.md](NOTICE.md), `decimen-web/NOTICE`, and the vendored codec notice files.
+LumaDrop is built from Decimen Optical Transfer by Evan Crawley (Bash Alarmist). It remains licensed under GNU AGPL v3.0 or later, and the original copyright, contributor, codec, and third-party notices are all kept in [NOTICE.md](NOTICE.md), `decimen-web/NOTICE`, and the vendored codec files.
 
-See [LICENSE](LICENSE) and [CHANGELOG.md](CHANGELOG.md).
+See [LICENSE](LICENSE) for the full license and [CHANGELOG.md](CHANGELOG.md) for the complete build history.

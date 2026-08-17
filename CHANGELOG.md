@@ -1,77 +1,77 @@
 # Changelog
 
-All ten LumaDrop Android development builds are preserved below. The `luma.N` suffix tracks Android wrapper builds based on Decimen 0.5.2.
+LumaDrop moved fast, so there were ten Android builds in a pretty short stretch. Here's what actually changed in each one. The `luma.N` versions are based on Decimen 0.5.2.
 
-> **Historical-source note:** this GitHub repository was created after `0.5.2-luma.9`. The older APKs are authentic archived binaries, but exact point-in-time source snapshots were not retained. Their tags therefore reference the consolidated public source history rather than claiming byte-for-byte reproducible historical source. Use `0.5.2-luma.9` unless you specifically need an earlier build.
+> **A note about the old builds:** the GitHub repo was created after `luma.9`, so the exact source snapshot for each earlier APK was never committed. The APKs are the real archived builds, but their tags point at the consolidated public source instead of pretending the old source can be reproduced byte for byte. Unless you're curious about the history, download `luma.9`.
 
 ## 0.5.2-luma.9 — 2026-08-17
 
-- Replaced the original launcher artwork with the neon LumaDrop QR-to-camera aperture icon.
-- Updated Android, web, PWA, favicon, and Apple-touch artwork to match.
-- Published the recommended APK as a release-signed artifact with a clean filename.
-- Retained all `luma.8` transfer, camera, and Android Share features.
+- Gave LumaDrop its neon QR-to-camera icon.
+- Used the same artwork for Android, the web app, the PWA, the favicon, and Apple touch icons.
+- Rebuilt the recommended APK with a dedicated release signature and a cleaner filename.
+- Everything added in `luma.8` is still here.
 
 ## 0.5.2-luma.8 — 2026-08-17
 
-- Added selection and optical transfer of multiple files through automatic standards-compatible ZIP packaging.
-- Added filename sanitization, duplicate-name handling, CRC-32 ZIP records, and exact-byte preservation tests.
-- Added Android `ACTION_SEND` and `ACTION_SEND_MULTIPLE` integration so files can be shared into LumaDrop from other apps.
-- Added automatic maximum sender brightness while transmitting and safe restoration when transmission stops or the page closes.
-- Added native shared-file streaming from Android content URIs into the bundled sender.
+- Made it possible to pick several files at once. LumaDrop puts them into a normal ZIP before sending.
+- Added safe filenames, duplicate-name handling, CRC-32 records, and tests that check the ZIP contains the exact original bytes.
+- Added Android Share support for one file or several files.
+- Turned the sending phone's brightness up during a transfer and restored it afterward.
+- Added the Android bridge that lets the bundled web sender read shared content URIs.
 
 ## 0.5.2-luma.7 — 2026-08-17
 
-- Increased receiver digital zoom from a 4x ceiling to 10x.
-- Kept the zoom path capability-safe for cameras that cannot provide matching hardware zoom.
+- Raised the receiver's zoom limit from 4x to 10x.
+- Kept it safe on phones whose cameras do not support the same amount of hardware zoom.
 
 ## 0.5.2-luma.6 — 2026-08-17
 
-- Added a mobile control for switching between rear and front cameras.
-- Preserved the current zoom and receiver state while cameras are restarted.
-- Added translated camera-control labels across the bundled locales.
+- Added a button to switch between the rear and front cameras.
+- Kept the zoom and receiver state sensible when the camera restarts.
+- Added the new camera wording to every bundled language.
 
 ## 0.5.2-luma.5 — 2026-08-17
 
-- Added receiver camera zoom with a visible slider.
-- Added pinch-to-zoom for touchscreens and mouse-wheel zoom for desktop testing.
-- Added decoder-aware center cropping so digital zoom affects the frames actually scanned, not only the preview.
-- Added camera zoom behavior tests.
+- Added a zoom slider to the receiver.
+- Added pinch-to-zoom on phones and mouse-wheel zoom on desktop.
+- Made the decoder scan the zoomed crop rather than only making the preview look zoomed.
+- Added tests for the zoom behavior.
 
 ## 0.5.2-luma.4 — 2026-08-17
 
-- Added adaptive frame sizing for small files and text snippets.
-- Avoided forcing one-block payloads into unnecessarily dense maximum-capacity QR symbols.
-- Improved small text-file reliability and frame readability while retaining the selected density for larger transfers.
+- Stopped tiny files and text snippets from being forced into an unnecessarily dense QR code.
+- Added adaptive frame sizing, which made small transfers easier for cameras to read.
+- Kept the chosen high-density settings for files that actually need them.
 
 ## 0.5.2-luma.3 — 2026-08-17
 
-- Improved arbitrary-file compatibility on older WebKit-based devices.
-- Added a compression fallback for environments without the browser `CompressionStream` API.
-- Kept compressed and uncompressed file containers interoperable with the receiver.
+- Fixed arbitrary-file sending on older WebKit-based devices.
+- Added a fallback for browsers that do not have `CompressionStream`.
+- Kept compressed and uncompressed transfers compatible with the same receiver.
 
 ## 0.5.2-luma.2 — 2026-08-17
 
-- Fixed packaged Send and Receive navigation inside Android WebView.
-- Kept routes under the secure `appassets.androidplatform.net` origin instead of handing them to an unavailable external page.
-- Resolved the dark `ERR_INVALID_RESPONSE` screen seen when opening Send or Receive offline.
+- Fixed the Send and Receive links inside the Android app.
+- Kept navigation inside the bundled `appassets.androidplatform.net` pages.
+- Got rid of the dark `ERR_INVALID_RESPONSE` screen that appeared offline.
 
 ## 0.5.2-luma.1 — 2026-08-17
 
-- Created the first Android wrapper around Decimen Optical Transfer 0.5.2.
-- Bundled the web application, decoder worker, WebAssembly codec, translations, and PWA assets for offline use.
-- Added Android camera and file-picker integration.
-- Added native Android saving for reconstructed files.
-- Introduced the dark neon LumaDrop interface and the initial launcher icon.
+- Wrapped Decimen 0.5.2 in the first LumaDrop Android app.
+- Bundled the sender, receiver, decoder worker, WebAssembly codec, translations, and PWA files so it could run offline.
+- Connected Android's camera and file picker.
+- Added native saving for completed transfers.
+- Added the first dark neon LumaDrop design and launcher icon.
 
 ## 0.1.0-native — 2026-08-17
 
-- Created the original native Kotlin/Jetpack Compose proof of concept.
-- Added Storage Access Framework file selection and saving.
-- Added a native fountain-style XOR protocol with systematic and repair frames.
-- Added per-frame CRC-32 validation and final SHA-256 verification.
-- Added CameraX reception with the bundled ML Kit QR scanner.
-- Added duplicate and dropped-frame tolerance with a 100 MB prototype safety limit.
+- Built the first proof of concept in Kotlin and Jetpack Compose.
+- Used Android's Storage Access Framework to choose and save files.
+- Built a native fountain-style XOR protocol with normal frames and repair frames.
+- Checked every frame with CRC-32 and the finished file with SHA-256.
+- Used CameraX and the bundled ML Kit scanner on the receiving side.
+- Handled missed and repeated frames, with a 100 MB safety limit.
 
-## Upstream
+## Where it came from
 
-The wrapper builds are based on [Decimen Optical Transfer](https://github.com/bashalarmistalt/decimen-optical-transfer) by Evan Crawley (Bash Alarmist). Original copyright, contribution, codec, and third-party notices remain included under AGPL-3.0-or-later.
+The optical wrapper builds are based on [Decimen Optical Transfer](https://github.com/bashalarmistalt/decimen-optical-transfer) by Evan Crawley (Bash Alarmist). The original notices and third-party credits are still included, and the project remains under AGPL-3.0-or-later.
