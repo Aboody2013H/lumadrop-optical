@@ -70,6 +70,10 @@ The APK is written to `decimenApp/build/outputs/apk/debug/decimenApp-debug.apk`.
 
 File processing and optical encoding happen locally. The receiver needs camera permission. LumaDrop does not require an account or a server for transfers. As with any file-transfer tool, only open received files when you trust the sender.
 
+## Development note
+
+LumaDrop was vibe-coded in collaboration with OpenAI Codex and ChatGPT—turning an idea into a tested Android release through rapid, conversation-driven design, implementation, debugging, and iteration.
+
 ## Origin and license
 
 LumaDrop is a modified distribution of Decimen Optical Transfer by Evan Crawley (Bash Alarmist). Decimen and the LumaDrop modifications are distributed under the GNU Affero General Public License v3.0 or later. Original copyright, contribution, codec, and third-party notices are retained in [NOTICE.md](NOTICE.md), `decimen-web/NOTICE`, and the vendored codec notice files.
