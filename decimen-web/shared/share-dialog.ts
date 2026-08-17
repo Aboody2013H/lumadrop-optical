@@ -1,7 +1,7 @@
 // The share dialog the home page and the sender both carry: a QR of the URL
 // baked into the page's #share-url input, the link itself copyable, and the
 // OS share sheet where one exists. The markup lives in each page's HTML (the
-// URL is a build-time token, so every deploy shares itself); this module only
+// URL is a build-time token, so each page can share the right destination); this module only
 // wires behaviour to it.
 
 import QRCode from "qrcode";
