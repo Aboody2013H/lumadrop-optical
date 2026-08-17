@@ -1,6 +1,8 @@
 # LumaDrop Optical
 
-![LumaDrop icon](branding/lumadrop-icon-v2-master.png)
+<p align="center">
+  <img src="branding/lumadrop-icon-v2-master.png" width="220" alt="LumaDrop Optical icon">
+</p>
 
 LumaDrop transfers files directly from one screen to another phone's camera using animated, fountain-coded QR frames. It needs no account, pairing, Bluetooth, internet connection, or shared Wi-Fi network.
 
@@ -23,7 +25,7 @@ Transfer speed depends heavily on the sender display, camera exposure, focus, QR
 
 ## Install
 
-Download the newest APK from [GitHub Releases](../../releases). Android may ask you to allow installation from your browser or file manager.
+Download the newest APK from [GitHub Releases](https://github.com/Aboody2013H/lumadrop-optical/releases). Android may ask you to allow installation from your browser or file manager.
 
 The current downloadable artifact is debug-signed for direct sideloading. Android 6.0/API 23 or newer is required.
 
