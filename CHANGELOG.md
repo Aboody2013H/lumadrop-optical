@@ -8,6 +8,7 @@ All ten LumaDrop Android development builds are preserved below. The `luma.N` su
 
 - Replaced the original launcher artwork with the neon LumaDrop QR-to-camera aperture icon.
 - Updated Android, web, PWA, favicon, and Apple-touch artwork to match.
+- Published the recommended APK as a release-signed artifact with a clean filename.
 - Retained all `luma.8` transfer, camera, and Android Share features.
 
 ## 0.5.2-luma.8 — 2026-08-17

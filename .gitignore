@@ -9,3 +9,5 @@ decimen-web/node_modules/
 decimen-web/dist/
 decimen-web/.git.upstream-backup/
 releases/*.apk
+releases/*.apk.idsig
+signing/
