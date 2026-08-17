@@ -1,0 +1,11 @@
+.gradle/
+.kotlin/
+.idea/
+local.properties
+**/build/
+captures/
+*.iml
+decimen-web/node_modules/
+decimen-web/dist/
+decimen-web/.git.upstream-backup/
+releases/*.apk

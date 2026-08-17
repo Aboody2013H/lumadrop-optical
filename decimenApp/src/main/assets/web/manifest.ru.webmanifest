@@ -1,0 +1,32 @@
+{
+  "name": "Decimen Optical Transfer",
+  "short_name": "Decimen",
+  "description": "Отправляйте файлы и текст между двумя устройствами, используя только экран и камеру. Анимированные QR-коды с фонтанным кодированием, без сетевого соединения между устройствами.",
+  "theme_color": "#070a11",
+  "background_color": "#070a11",
+  "display": "standalone",
+  "icons": [
+    {
+      "src": "icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "icon-maskable-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ],
+  "lang": "ru",
+  "dir": "ltr",
+  "start_url": "./ru/",
+  "scope": "./"
+}

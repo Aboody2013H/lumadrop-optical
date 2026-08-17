@@ -1,0 +1,165 @@
+<!doctype html>
+<!-- Decimen Optical Transfer v0.5.2 — https://decimen.app — (c) 2026 Evan Crawley (Bash Alarmist) — SPDX-License-Identifier: AGPL-3.0-or-later — portions MIT: (c) 2026 Steve Dakh; Emscripten (see NOTICE) — Source: https://github.com/bashalarmistalt/decimen-optical-transfer -->
+<html lang="it" data-i18n-static="it">
+  <head>
+    <meta charset="UTF-8" />
+    <!-- viewport-fit=cover on every page: the safe-area env() padding in
+         style.css is inert without it, and the pages must agree so standalone
+         (installed) mode doesn't jump between letterboxed and edge-to-edge. -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    <title>Decimen Optical Transfer — trasferisci file con la luce</title>
+    <meta
+      name="description"
+     
+      content="Invia un file o un testo tra due dispositivi con soltanto uno schermo e una fotocamera. Codici QR animati con codifica fountain, nessun percorso di rete in mezzo."
+    />
+    <meta name="theme-color" content="#070a11" />
+
+    <!-- Absolute URLs: scrapers are inconsistent about resolving relative ones.
+         Set VITE_SITE_URL at build time when deploying elsewhere. -->
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Decimen Optical Transfer" />
+    <meta property="og:title" content="Decimen Optical Transfer — trasferisci file con la luce" />
+    <meta
+      property="og:description"
+     
+      content="Codici QR animati con codifica fountain, da schermo a fotocamera. Nessun account, nessun abbinamento, nessun percorso di rete tra i due dispositivi. Up to 418 KB/s sostenuti, misurati e documentati."
+    />
+    <meta property="og:url" content="https://decimen.app/it/" />
+    <meta property="og:image" content="https://decimen.app/og.png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta
+      property="og:image:alt"
+     
+      content="Un telefono a metà trasferimento, mentre legge un flusso di codici QR animati da un altro schermo."
+    />
+    <meta name="twitter:card" content="summary_large_image" />
+
+    <link rel="canonical" href="https://decimen.app/it/" />
+    <link rel="icon" href="../decimen_logo.svg" type="image/svg+xml" />
+    <link rel="apple-touch-icon" href="../apple-touch-icon.png" />
+    <script type="module" crossorigin src="../assets/index-BzZM-wQL.js"></script>
+    <link rel="modulepreload" crossorigin href="../assets/dialog-a0dDvzYp.js">
+    <link rel="modulepreload" crossorigin href="../assets/share-dialog-B0MJErSf.js">
+    <link rel="stylesheet" crossorigin href="../assets/dialog-XmOPaFpX.css">
+  <link rel="manifest" href="../manifest.it.webmanifest">    <link rel="alternate" hreflang="en" href="https://decimen.app/" />
+    <link rel="alternate" hreflang="es" href="https://decimen.app/es/" />
+    <link rel="alternate" hreflang="pt-BR" href="https://decimen.app/pt-br/" />
+    <link rel="alternate" hreflang="fr" href="https://decimen.app/fr/" />
+    <link rel="alternate" hreflang="de" href="https://decimen.app/de/" />
+    <link rel="alternate" hreflang="it" href="https://decimen.app/it/" />
+    <link rel="alternate" hreflang="ru" href="https://decimen.app/ru/" />
+    <link rel="alternate" hreflang="hi" href="https://decimen.app/hi/" />
+    <link rel="alternate" hreflang="zh-Hans" href="https://decimen.app/zh-hans/" />
+    <link rel="alternate" hreflang="ja" href="https://decimen.app/ja/" />
+    <link rel="alternate" hreflang="ko" href="https://decimen.app/ko/" />
+    <link rel="alternate" hreflang="ar" href="https://decimen.app/ar/" />
+    <link rel="alternate" hreflang="x-default" href="https://decimen.app/" />
+  </head>
+  <body class="home-page">
+    <header class="site-header">
+      <a class="brand" href="./"><svg class="brand-logo" viewBox="0 0 543 554.1" fill="currentColor" aria-hidden="true"><g transform="translate(-241,789) scale(0.1,-0.1)"><path d="M2410 6513 l0 -1378 103 101 c540 531 1324 986 1984 1153 402 102 850 95 1268 -21 529 -146 1300 -581 1860 -1050 175 -146 212 -184 199 -205 -37 -63 -502 -432 -754 -600 -969 -644 -1785 -844 -2590 -634 -667 174 -1376 581 -1947 1118 l-123 115 0 -1382 0 -1381 1478 4 c1291 3 1491 5 1588 20 1345 194 2240 1124 2355 2446 17 195 7 620 -19 786 -192 1236 -1030 2069 -2262 2249 -217 32 -411 36 -1772 36 l-1368 0 0 -1377z"/><path d="M4945 5906 c-300 -68 -532 -287 -611 -577 -25 -89 -25 -289 0 -378 141 -513 724 -749 1179 -477 405 242 503 778 209 1148 -100 125 -258 229 -417 273 -82 22 -282 29 -360 11z"/></g></svg>Decimen Optical Transfer</a>
+      <!-- Same switcher as the tool pages, root-relative hrefs; neither link
+           is current here, so neither is highlighted. -->
+      <nav class="mode-nav" aria-label="Modalità"><a href="./send/">Invia</a><a href="./receive/">Ricevi</a></nav>
+    </header>
+    <main class="home-shell">
+      <section class="hero">
+        <h1>Trasferisci file<br />con la luce.</h1>
+        <p class="hero-copy">Invia un file o un blocco di testo da uno schermo alla fotocamera di un altro dispositivo. Nessun account, abbinamento, archiviazione cloud o percorso di rete tra i dispositivi.</p>
+      </section>
+
+      <section class="transfer-grid" aria-label="Scegli un lato">
+        <article class="transfer-card file-card">
+          <div>
+            <p class="card-kicker">Questo schermo trasmette</p>
+            <h2>Invia un file o un testo</h2>
+            <p>Qualsiasi file fino a 64 MB, o un frammento di testo incollato fino a 4 MB. Compresso quando conviene, ripristinato con il nome originale.</p>
+          </div>
+          <div class="card-actions">
+            <a class="action" href="./send/"><span>Invia</span> <svg class="action-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 12h15"/><path d="M12 5l7 7-7 7"/></svg></a>
+          </div>
+        </article>
+
+        <article class="transfer-card note-feature-card">
+          <div>
+            <p class="card-kicker">Questa fotocamera riceve</p>
+            <h2>Inquadra e ricevi</h2>
+            <p>Punta la fotocamera verso lo schermo del mittente per ricevere il file.</p>
+          </div>
+          <div class="card-actions">
+            <a class="action" href="./receive/"><span>Ricevi</span> <svg class="action-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 4v15"/><path d="M5 12l7 7 7-7"/></svg></a>
+          </div>
+        </article>
+      </section>
+
+      <div class="home-share">
+        <button id="share-open" class="secondary-button share-site" type="button">
+          <svg class="share-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 12v7a1 1 0 0 0 1 1h14a1 1 0 0 0 1-1v-7"/><path d="M16 6l-4-4-4 4"/><path d="M12 2v13"/></svg>
+          <span>Condividi Decimen</span>
+        </button>
+      </div>
+
+      <div class="support-card">
+        <svg class="support-mug" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 8h12v8a4 4 0 0 1-4 4H8a4 4 0 0 1-4-4V8z"/><path d="M16 9h2a3 3 0 0 1 0 6h-2"/><path d="M8 2v3"/><path d="M12 2v3"/></svg>
+        <div>
+          <p class="support-title">Gratuito, open source, senza pubblicità</p>
+          <p class="support-text">Se Decimen ti ha semplificato la giornata, puoi <a href="https://buymeacoffee.com/bashalarmist" target="_blank" rel="noopener noreferrer">offrirmi un caffè</a>.</p>
+        </div>
+      </div>
+
+      <dialog class="help-dialog share-dialog" id="share-dialog" aria-labelledby="share-title" data-share-title="Decimen Optical Transfer — trasferisci file con la luce">
+        <!-- Same markup as the sender's dialog, wired by shared/share-dialog.ts;
+             only the URL and copy differ. Focus lands on the title — see the
+             iOS note on the receiver's dialog. -->
+        <h2 id="share-title" tabindex="-1" autofocus>Condividi questa app</h2>
+        <p class="share-hint">Scansiona questo codice con la fotocamera di un altro dispositivo, oppure inviagli il link.</p>
+        <canvas id="share-qr" width="16" height="16"></canvas>
+        <div class="share-url-row">
+          <input id="share-url" readonly value="https://decimen.app/it/" aria-label="Link al sito" />
+          <button id="share-copy" class="secondary-button" type="button">Copia</button>
+        </div>
+        <div class="note-actions">
+          <button id="share-native" class="secondary-button" type="button" hidden>Condividi…</button>
+          <button id="share-close" class="secondary-button" type="button">Chiudi</button>
+        </div>
+      </dialog>
+
+      <p class="privacy-note">Non serve un percorso di rete tra i dispositivi: i byte viaggiano come luce. I file non sono cifrati, quindi tutto ciò che appare sullo schermo che trasmette è leggibile da qualunque fotocamera puntata su di esso.</p>
+    </main>
+    <footer class="site-footer">
+      <span class="footer-id">
+        <span>Decimen Optical Transfer</span>
+        <span>v0.5.2 · build 3c4c864-dirty · © 2026 Evan Crawley (Bash Alarmist) · <a href="https://github.com/bashalarmistalt/decimen-optical-transfer/blob/main/LICENSE">AGPL-3.0-or-later</a> · <a class="support-link" href="https://buymeacoffee.com/bashalarmist" target="_blank" rel="noopener noreferrer">♥ sostieni</a></span>
+      </span>
+      <nav class="footer-links" aria-label="Link del progetto">
+        <a href="https://github.com/bashalarmistalt/decimen-optical-transfer">GitHub</a>
+        <a href="https://github.com/bashalarmistalt/decimen-optical-transfer/releases">Releases</a>
+      </nav>
+    </footer>
+  <script>if ("serviceWorker" in navigator) {
+  window.addEventListener("load", () => {
+    // Already controlled means this is an update rather than a first visit,
+    // and only then is a reload warranted when the new worker takes over.
+    const wasControlled = !!navigator.serviceWorker.controller;
+    let reloading = false;
+    navigator.serviceWorker.addEventListener("controllerchange", () => {
+      if (!wasControlled || reloading) return;
+      reloading = true;
+      location.reload();
+    });
+    navigator.serviceWorker.register("../sw.js", { scope: "../" }).then((reg) => {
+      const promote = (worker) => worker && worker.postMessage({ type: "SKIP_WAITING" });
+      promote(reg.waiting);
+      reg.addEventListener("updatefound", () => {
+        const next = reg.installing;
+        if (!next) return;
+        next.addEventListener("statechange", () => {
+          if (next.state === "installed") promote(reg.waiting || next);
+        });
+      });
+    });
+  });
+}</script></body>
+</html>

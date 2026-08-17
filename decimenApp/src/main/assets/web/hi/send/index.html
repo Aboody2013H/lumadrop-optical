@@ -1,0 +1,174 @@
+<!doctype html>
+<!-- Decimen Optical Transfer v0.5.2 — https://decimen.app — (c) 2026 Evan Crawley (Bash Alarmist) — SPDX-License-Identifier: AGPL-3.0-or-later — portions MIT: (c) 2026 Steve Dakh; Emscripten (see NOTICE) — Source: https://github.com/bashalarmistalt/decimen-optical-transfer -->
+<html lang="hi" data-i18n-static="hi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    <title>Decimen Optical Transfer — भेजें</title>
+    <meta name="theme-color" content="#070a11" />
+    <link rel="canonical" href="https://decimen.app/hi/send/" />
+    <link rel="icon" href="../../decimen_logo.svg" type="image/svg+xml" />
+    <link rel="apple-touch-icon" href="../../apple-touch-icon.png" />
+    <script type="module" crossorigin src="../../assets/send-1taBps8X.js"></script>
+    <link rel="modulepreload" crossorigin href="../../assets/dialog-a0dDvzYp.js">
+    <link rel="modulepreload" crossorigin href="../../assets/share-dialog-B0MJErSf.js">
+    <link rel="modulepreload" crossorigin href="../../assets/wake-lock-DhAVppwm.js">
+    <link rel="stylesheet" crossorigin href="../../assets/dialog-XmOPaFpX.css">
+  <link rel="manifest" href="../../manifest.hi.webmanifest">    <link rel="alternate" hreflang="en" href="https://decimen.app/send/" />
+    <link rel="alternate" hreflang="es" href="https://decimen.app/es/send/" />
+    <link rel="alternate" hreflang="pt-BR" href="https://decimen.app/pt-br/send/" />
+    <link rel="alternate" hreflang="fr" href="https://decimen.app/fr/send/" />
+    <link rel="alternate" hreflang="de" href="https://decimen.app/de/send/" />
+    <link rel="alternate" hreflang="it" href="https://decimen.app/it/send/" />
+    <link rel="alternate" hreflang="ru" href="https://decimen.app/ru/send/" />
+    <link rel="alternate" hreflang="hi" href="https://decimen.app/hi/send/" />
+    <link rel="alternate" hreflang="zh-Hans" href="https://decimen.app/zh-hans/send/" />
+    <link rel="alternate" hreflang="ja" href="https://decimen.app/ja/send/" />
+    <link rel="alternate" hreflang="ko" href="https://decimen.app/ko/send/" />
+    <link rel="alternate" hreflang="ar" href="https://decimen.app/ar/send/" />
+    <link rel="alternate" hreflang="x-default" href="https://decimen.app/send/" />
+  </head>
+  <body class="tool-page">
+    <header class="site-header">
+      <a class="brand" href="../"><svg class="brand-logo" viewBox="0 0 543 554.1" fill="currentColor" aria-hidden="true"><g transform="translate(-241,789) scale(0.1,-0.1)"><path d="M2410 6513 l0 -1378 103 101 c540 531 1324 986 1984 1153 402 102 850 95 1268 -21 529 -146 1300 -581 1860 -1050 175 -146 212 -184 199 -205 -37 -63 -502 -432 -754 -600 -969 -644 -1785 -844 -2590 -634 -667 174 -1376 581 -1947 1118 l-123 115 0 -1382 0 -1381 1478 4 c1291 3 1491 5 1588 20 1345 194 2240 1124 2355 2446 17 195 7 620 -19 786 -192 1236 -1030 2069 -2262 2249 -217 32 -411 36 -1772 36 l-1368 0 0 -1377z"/><path d="M4945 5906 c-300 -68 -532 -287 -611 -577 -25 -89 -25 -289 0 -378 141 -513 724 -749 1179 -477 405 242 503 778 209 1148 -100 125 -258 229 -417 273 -82 22 -282 29 -360 11z"/></g></svg>Decimen Optical Transfer</a>
+      <!-- Byte-identical on both tool pages: the standalone build matches it
+           exactly to swap in a mode badge, and main.ts marks the current page. -->
+      <nav class="mode-nav" aria-label="मोड"><a href="../send/">भेजें</a><a href="../receive/">प्राप्त करें</a></nav>
+    </header>
+    <main class="send-shell">
+      <section class="tool-intro">
+        <p class="eyebrow">स्क्रीन → कैमरा</p>
+        <h1 id="tool-title">फ़ाइल भेजें</h1>
+        <p>जब तक आप रिसीवर से स्कैन नहीं करते, आपके डिवाइस से कुछ भी बाहर नहीं जाता।</p>
+      </section>
+
+      <div class="mode-picker" id="mode-picker" role="radiogroup" aria-label="क्या भेजना है">
+        <label>
+          <input type="radio" name="send-mode" value="file" checked />
+          <span>फ़ाइल</span>
+        </label>
+        <label>
+          <input type="radio" name="send-mode" value="snippet" />
+          <span>टेक्स्ट स्निपेट</span>
+        </label>
+      </div>
+
+      <!-- The whole label is the click target; the native input is visually
+           hidden (but still focusable) and the styled span stands in for it. -->
+      <label class="file-picker" id="pane-file">
+        <span class="file-picker-button" id="file-picker-button">फ़ाइल चुनें</span>
+        <span class="file-picker-text" id="file-picker-label">कोई भी फ़ाइल · 64 MB तक</span>
+        <input id="cfg-file" type="file" multiple />
+      </label>
+
+      <div class="demo-picker" id="pane-demo" hidden>
+        <span>डेमो पेलोड</span>
+        <div class="demo-buttons">
+          <button type="button" data-demo="success.png">512 KB इमेज</button>
+          <button type="button" data-demo="success-2mb.png">2 MB इमेज</button>
+          <button type="button" data-demo="benchmark.png" data-benchmark hidden>1 MB बेंचमार्क</button>
+        </div>
+      </div>
+
+      <div class="note-composer" id="pane-snippet" hidden>
+        <label for="snippet-text" id="snippet-label">भेजने के लिए टेक्स्ट</label>
+        <textarea id="snippet-text" rows="7" placeholder="कुछ भी पेस्ट करें या लिखें — कोई URL, कोई कॉन्फ़िग, टेक्स्ट का पूरा पहाड़…"></textarea>
+        <button id="send-snippet" type="button">टेक्स्ट स्ट्रीम शुरू करें</button>
+      </div>
+
+      <div class="stage" id="stage" hidden><canvas id="qr" width="16" height="16"></canvas></div>
+      <details class="settings">
+        <summary>ट्रांसफ़र सेटिंग्स</summary>
+        <div class="row">
+          <label>
+            <span>tx fps</span>
+            <!-- Options come from shared/send-settings.ts via htmlTokens() -->
+            <select id="cfg-fps"><option>10</option><option>15</option><option>20</option><option>24</option><option>30</option><option>55</option><option selected>60</option></select>
+          </label>
+          <label>
+            <span>बाइट / फ़्रेम</span>
+            <select id="cfg-bytes"><option>500</option><option>1000</option><option>1465</option><option>1850</option><option>2331</option><option selected>2953</option></select>
+          </label>
+          <label>
+            <span>एरर करेक्शन</span>
+            <select id="cfg-ecc">
+              <option selected>L</option><option>M</option><option>Q</option><option>H</option>
+            </select>
+          </label>
+          <label>
+            <span>लेआउट</span>
+            <select id="cfg-grid">
+              <option value="1" selected>1 कोड</option><option value="2">2 कोड (1×2)</option><option value="4">4 कोड (2×2)</option><option value="6">6 कोड (2×3)</option>
+            </select>
+          </label>
+          <label>
+            <span>डिस्प्ले साइज़</span>
+            <input id="cfg-size" type="range" min="300" max="1200" step="50" value="900" />
+          </label>
+        </div>
+        <!-- What the knobs above actually produced; filled by main.ts when a
+             stream locks its first frame. -->
+        <dl class="stream-specs" id="stream-specs" hidden>
+          <div><dt>tx रेट</dt><dd id="spec-fps">—</dd></div>
+          <div><dt>फ़्रेम पेलोड</dt><dd id="spec-frame">—</dd></div>
+          <div><dt>qr</dt><dd id="spec-qr">—</dd></div>
+          <div><dt>भेजा जा रहा</dt><dd id="spec-payload">—</dd></div>
+          <div><dt>कंप्रेशन</dt><dd id="spec-compression">—</dd></div>
+          <div><dt>फ़ाउंटेन ब्लॉक</dt><dd id="spec-k">—</dd></div>
+        </dl>
+      </details>
+      <div class="hint status-line" id="specs">शुरू करने के लिए कोई फ़ाइल चुनें</div>
+      <dialog class="help-dialog share-dialog" id="share-dialog" aria-labelledby="share-title" data-share-title="Decimen Optical Transfer — रिसीवर">
+        <!-- Same focus dodge as the receiver's dialog: land focus on the title
+             so iOS doesn't paint the first button pre-highlighted. -->
+        <h2 id="share-title" tabindex="-1" autofocus>रिसीवर शेयर करें</h2>
+        <p class="share-hint">इसे दूसरे डिवाइस के कैमरे से स्कैन करें, या उसे लिंक भेज दें।</p>
+        <canvas id="share-qr" width="16" height="16"></canvas>
+        <div class="share-url-row">
+          <!-- Token-substituted at build time; VITE_SITE_URL overrides it for
+               deploys living elsewhere. -->
+          <input id="share-url" readonly value="https://decimen.app/hi/receive/" aria-label="रिसीवर लिंक" />
+          <button id="share-copy" class="secondary-button" type="button">कॉपी करें</button>
+        </div>
+        <div class="note-actions">
+          <button id="share-native" class="secondary-button" type="button" hidden>शेयर करें…</button>
+          <button id="share-close" class="secondary-button" type="button">बंद करें</button>
+        </div>
+      </dialog>
+      <div class="hint footer-hint" id="footer-hint" hidden>दूसरे डिवाइस पर “प्राप्त करें” खोलें। इस स्क्रीन की ब्राइटनेस बढ़ा दें।</div>
+    </main>
+    <footer class="site-footer">
+      <span class="footer-id">
+        <span>Decimen Optical Transfer</span>
+        <span>v0.5.2 · build 3c4c864-dirty · © 2026 Evan Crawley (Bash Alarmist) · <a href="https://github.com/bashalarmistalt/decimen-optical-transfer/blob/main/LICENSE">AGPL-3.0-or-later</a> · <a class="support-link" href="https://buymeacoffee.com/bashalarmist" target="_blank" rel="noopener noreferrer">♥ सहयोग</a></span>
+      </span>
+      <nav class="footer-links" aria-label="प्रोजेक्ट लिंक">
+        <a href="https://github.com/bashalarmistalt/decimen-optical-transfer">GitHub</a>
+        <a href="https://github.com/bashalarmistalt/decimen-optical-transfer/releases">Releases</a>
+      </nav>
+    </footer>
+  <script>if ("serviceWorker" in navigator) {
+  window.addEventListener("load", () => {
+    // Already controlled means this is an update rather than a first visit,
+    // and only then is a reload warranted when the new worker takes over.
+    const wasControlled = !!navigator.serviceWorker.controller;
+    let reloading = false;
+    navigator.serviceWorker.addEventListener("controllerchange", () => {
+      if (!wasControlled || reloading) return;
+      reloading = true;
+      location.reload();
+    });
+    navigator.serviceWorker.register("../../sw.js", { scope: "../../" }).then((reg) => {
+      const promote = (worker) => worker && worker.postMessage({ type: "SKIP_WAITING" });
+      promote(reg.waiting);
+      reg.addEventListener("updatefound", () => {
+        const next = reg.installing;
+        if (!next) return;
+        next.addEventListener("statechange", () => {
+          if (next.state === "installed") promote(reg.waiting || next);
+        });
+      });
+    });
+  });
+}</script></body>
+</html>
